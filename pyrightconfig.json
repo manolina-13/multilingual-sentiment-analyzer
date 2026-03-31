@@ -1,0 +1,9 @@
+{
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.10",
+  "include": [
+    "app.py",
+    "engine.py"
+  ]
+}
