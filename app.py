@@ -79,7 +79,7 @@ def set_text(txt):
     st.session_state.text_input = txt
 
 # 6. Header
-st.title("🌍 Multilingual Sentiment Analyzer - PolySentiment AI ")
+st.title("PolySentiment AI - Multilingual Sentiment Analysis")
 st.markdown("Analyze sentiment in **English, Bengali, and Hindi** directly using native scripts.")
 
 # 7. Sample Buttons
