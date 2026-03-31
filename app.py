@@ -3,10 +3,7 @@ import os
 import streamlit as st
 import streamlit.components.v1 as components
 from engine import SentimentEngine
-if "STREAMLIT_RUNTIME" not in os.environ:
-    st.title("PolySentiment AI")
-    st.write("Multilingual Sentiment Analysis with Explainability")
-    st.stop()
+
 
 # Suppress Transformers/Streamlit noise
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
