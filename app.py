@@ -53,12 +53,11 @@ with st.sidebar:
     # st.write("✅ **XAI Integration:** Uses SHAP to visualize word-level importance.")
     # st.write("✅ **Secure API:** Uses st.secrets for token management.")
     st.subheader("💡 Key Features")
-    st.write("✅ **Zero-Shot Multilingual (40+ Languages):** Direct sentiment analysis on native scripts—English, Hindi, Bengali, and more without transliteration.")
+    st.write("✅ **Zero-Shot Multilingual:** Direct sentiment analysis on native scripts—English, Hindi, and Bengali—without any preprocessing or transliteration.")
     st.write("✅ **Native Script Detection:** Automatic Unicode-based script identification (Latin, Devanagari, Bengali) with language classification.")
     st.write("✅ **XLM-RoBERTa Model:** State-of-the-art multilingual transformer for cross-lingual understanding and zero-shot transfer learning.")
     st.write("✅ **SHAP Explainability:** Word-level feature attribution—visualize exactly which words drive the sentiment decision (red=positive, blue=negative).")
     st.write("✅ **Confidence Scoring:** Real-time confidence metrics for each prediction with probabilistic thresholds.")
-    st.write("✅ **Secure Token Management:** Hugging Face API tokens stored in st.secrets—no hardcoded credentials.")
     st.write("✅ **Technical Execution Log:** Full transparency into model pipeline, script detection, and inference chain.")
     st.write("✅ **Dark Mode Optimized UI:** Professional Streamlit interface with custom CSS for readability and visual clarity.")
     
