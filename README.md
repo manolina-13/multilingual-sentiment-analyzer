@@ -117,20 +117,19 @@ streamlit run app.py
 ## Screenshots
 
 ### Screenshot 1
-![Screenshot 1](Screenshot_1.png)
+![Screenshot 1](Screenshot_4.png)
 
 ### Screenshot 2
-![Screenshot 2](Screenshot_2.png)
+![Screenshot 2](Screenshot_5.png)
 
 ### Screenshot 3
-![Screenshot 3](Screenshot_3.png)
+![Screenshot 3](Screenshot_6.png)
 
 ## Current Technical Notes / Limitations
 
 1. Explainability model is English-specific; non-English SHAP output may be less reliable.
 2. Primary inference depends on network access to Hugging Face Inference API.
 3. Label normalization includes fallback handling for generic labels like `LABEL_0` and `LABEL_2`.
-4. `requirements.txt` currently does not list all imported runtime libraries in code (`huggingface_hub`, `shap`).
 
 ## Future Improvements
 
