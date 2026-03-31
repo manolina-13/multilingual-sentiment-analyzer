@@ -15,7 +15,11 @@ st.set_page_config(
     page_icon="🌍", 
     layout="centered"
 )
-
+# ✅ ADD HERE (immediately after page config)
+st.markdown("""
+<meta property="og:title" content="PolySentiment AI">
+<meta property="og:description" content="Multilingual Sentiment Analysis with Explainability">
+""", unsafe_allow_html=True)
 # 2. Custom CSS for Professional UI
 st.markdown("""
     <style>
