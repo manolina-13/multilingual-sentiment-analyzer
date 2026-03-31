@@ -3,7 +3,7 @@ import os
 import streamlit as st
 import streamlit.components.v1 as components
 from engine import SentimentEngine
-import shap
+
 
 # Suppress Transformers/Streamlit noise
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
@@ -155,11 +155,13 @@ if st.button("Analyze Sentiment", use_container_width=True):
             """)
 
         # --- PHASE 3: EXPLAINABILITY LAYER (SHAP) ---
+        
         st.write("---")
         st.subheader("🎯 Explainability Layer (XAI)")
         st.write("See which words influenced the AI's decision:")
         
         with st.spinner("Generating explanation map..."):
+            import shap
             try:
                 # 1. Get SHAP values from the engine
                 shap_values = engine.get_explanation(user_input)
