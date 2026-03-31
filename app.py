@@ -11,7 +11,7 @@ logging.getLogger("transformers").setLevel(logging.ERROR)
 
 # 1. Page Configuration
 st.set_page_config(
-    page_title="AI Sentiment Pro", 
+    page_title="PolySentiment AI - Multilingual Sentiment Analysis", 
     page_icon="🌍", 
     layout="centered"
 )
@@ -79,7 +79,7 @@ def set_text(txt):
     st.session_state.text_input = txt
 
 # 6. Header
-st.title("🌍 Multilingual Sentiment AI")
+st.title("🌍 Multilingual Sentiment Analyzer - PolySentiment AI ")
 st.markdown("Analyze sentiment in **English, Bengali, and Hindi** directly using native scripts.")
 
 # 7. Sample Buttons
