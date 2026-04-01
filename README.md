@@ -137,3 +137,11 @@ streamlit run app.py
 - Add formal unit tests for `detect_script`, label mapping, and inference error handling.
 - Add structured logging and telemetry for production observability.
 - Sync `requirements.txt` with all runtime imports.
+
+## License
+
+This project is distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+Manolina Das - [GitHub Profile](https://github.com/manolina-13)
