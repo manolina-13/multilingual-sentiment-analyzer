@@ -31,6 +31,15 @@ The application combines cloud inference for multilingual classification with a 
 
 > Note: explainability is optimized for English text because the local SHAP pipeline is built on an English DistilBERT sentiment model.
 
+### Why two models? (explicit tradeoff)
+
+The project intentionally uses different models for prediction and explanation:
+
+- **XLM-R multilingual model** for stronger multilingual sentiment accuracy (English, Bengali, Hindi).
+- **DistilBERT English model** for faster, lower-memory SHAP generation in a local environment.
+
+This creates a tradeoff: **better multilingual prediction quality vs. explanation alignment**. In particular, SHAP token attributions for non-English text may not fully match the multilingual model's internal reasoning.
+
 ## Core Features
 
 1. **Multilingual sentiment inference**
